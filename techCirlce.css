@@ -1,0 +1,66 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  
+}
+.menuBarHolder{
+  width: 100vw;
+  height: 50px;
+  background: #425c63;
+  position: fixed;
+  z-index: 5;
+}
+.sticks{
+  position: fixed;
+  top: 7.5px;
+  left: 10px;
+  z-index: 6;
+}
+.sticks .stick{
+  width: 35px;
+  height: 4px;
+  background: white;
+  margin: 5px 0 0 5px;
+}
+.menus{
+  width: 100vw;
+  height: ;
+  background: #5370cd72;
+  position: absolute;
+  top: 50px;
+  display: grid;
+  transform: translateY(-100%);
+  transition: 0.3s all ease-in-out;
+  border: 0px solid;
+  border-radius: 0 0 100% 100%;
+}
+.afterMenus{
+  transform: translateY(0px);
+   border: 0px solid;
+  border-radius: 0px;
+  transition: 0.3s all ease-in-out;
+}
+.menus li{
+  padding: 40px 0 0 15px;
+  text-align: center;
+}
+.menus li:nth-child(1){
+  padding-top: 25px;
+}
+.menus li:nth-child(4){
+  padding-bottom: 25px;
+}
+
+
+.menus li a{
+  color: #141414;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  pointer-events: none;
+}
